@@ -1,0 +1,155 @@
+/* Bài 90 - FIGMA TO HTML
+
+link dự án tham khảo
+https://www.figma.com/design/3kHcuu3c8fvhnA2q2wUwBM/1.Learning-landing-page?node-id=28-2&p=f&t=DQWH4WzypaSuBhXE-0
+
+Bước 1. Tạo file dự án
+
+Bước 2. 
+search: reset css
+https://meyerweb.com/eric/tools/css/reset/
+
+copy code trong trang để reset CSS
+
+
+*/
+
+/* Bước 3 */
+*{
+    box-sizing: border-box;
+}
+
+/* Bước 4 */
+html{
+    font-size: 62.5%;
+}
+
+/* Bước 5 - Khôi phục cỡ chữ mặc định 
+1rem= 10px -> 1.6rem = 16px
+(Xem lại bài 56)
+*/
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "PT Serif", serif; */
+    /* font-family: "Inter", sans-serif; */
+}
+
+/* Bài 90.3
+Bước 6 - Code phần Header 
+->>6.1 Kiểm tra font của dự án tham khảo
+->>6.2 Nhúng font
+   ->> search: google fonts
+   ->> copy code html --> paste vào đầu html
+   ->> paste font vào phần body
+
+
+*/
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    padding: 0px 16px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+
+    border-radius: 2.45rem;
+    background: #171100;
+
+
+}
+
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*///////////////////////// Code cho phần header */
+
+.header {
+    background: #FFFCF4;
+    background: antiquewhite;
+}
+
+header.fixed{
+    position: sticky;
+    top: -28px;
+}
+
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav{
+    margin-left: auto;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav a{
+/* font-family: Poppins; */
+/* font-weight: 400; */
+/* font-style: normal; */
+/* leading-trim: NONE; */
+/* line-height: 28px; */
+/* letter-spacing: 0%; */
+/* text-align: center; */
+/* Toàn bộ phần loại bỏ */
+
+
+color: #5F5B53;
+font-size: 1.6rem;
+/* background-color: blue; */
+padding: 8px 21px;
+
+position: relative;
+
+}
+
+.nav li.active a,
+.nav a:hover{
+color: #171100;
+/* font-weight: 600; */
+/* Dùng text-shadow thay cho font-weight */
+text-shadow: 1px 0 0 currentColor;
+
+}
+
+.nav li.active a::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+
+    content: "";
+    background: #171100;
+    width: 12px;
+    height: 2px;
+
+    border-radius: 1px;
+
+}
+
+
+.header .btn-sign-up{
+    min-width: 144px;
+}
+
+.header .action{
+    margin-left: 49px;
+}
