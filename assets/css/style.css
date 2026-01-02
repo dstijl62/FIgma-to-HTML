@@ -56,9 +56,19 @@ Bước 6 - Code phần Header
 
 
 */
-
+/* ==================== common ======================== */
 a{
     text-decoration: none;
+}
+
+.heading-lv2{
+    color: #171100;
+    font-family: var(--font-heading);
+font-weight: 700;
+font-size: 3.8rem;
+line-height: 1.26;
+letter-spacing: -0.76px;
+
 }
 
 .btn{
@@ -180,6 +190,7 @@ text-shadow: 1px 0 0 currentColor;
     /* margin-top: 56px; */
     padding: 56px 0 65px;
     background-color: #FFFCF4;
+    /* background-color: antiquewhite; */
 }
 
 .hero .body{
@@ -361,4 +372,56 @@ margin-right: 15px;
 
 .hero .stats strong:nth-child(2) {
    margin-left: 28px;
+}
+
+
+/* ========================= popular =================== */
+
+.popular{
+    padding: 65px 0;
+    background-color: antiquewhite;
+    margin-top: 135px;
+}
+
+.popular-top{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.popular-top .desc {
+color: #5F5B53;
+font-size: 1.8rem;
+line-height: 1.67;
+
+margin-top: 16px;
+width: 458px;
+}
+
+.popular-top .controls{
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    color: var(--primary-color);
+
+    border: 1px solid var(--primary-color);
+
+}
+
+.popular-top .control-btn:hover{
+    background: var(--primary-color);
+    color: #FFFFFF;
+    cursor: pointer;
 }
