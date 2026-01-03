@@ -621,7 +621,7 @@ line-height: 1.54;
 }
 
 
-/* ======================== features =================== */
+/* ======================== features 1 =================== */
 
 .features{
     margin-top: 135px;
@@ -672,4 +672,25 @@ line-height: 1.75;
     width: 137px;
     height: 50px;
     background: var(--primary-color);
+}
+
+
+/* ======================== features features-2nd =================== */
+
+.features-2nd .body{
+    flex-direction: row-reverse;
+
+}
+
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .content{
+    width: 49%;
+}
+
+.features-2nd .images img{
+    width: 470px;
+height: 440px;
 }
