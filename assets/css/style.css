@@ -724,13 +724,19 @@ line-height: 1.75;
     margin-top: 55px;
 
     gap: 30px;
+
+    overflow: hidden;
 }
 
 .blogs .item{
-    width: 33.33%;
+    /* Hiện tại gap đang là 30px có 2gap -> 60px -> 60/3 ảnh -> mỗi ảnh hụt 20px */
+    width: calc(33.33% - 20px); 
+    /* width: 33.33%; */
     border-radius: 16px;
     background: #FFFFFF;
     /* background-color: red; */
+
+    flex-shrink: 0;
 }
 
 .blogs .item:hover{
@@ -799,9 +805,33 @@ line-height: 1.75;
 
 .blogs .item .btn{
     margin-top: 12px;
+
+    font-size: 1.4rem;
 }
 
 
 .blogs .item .btn:hover{
     background: var(--primary-color);
+}
+
+.blogs .dots{
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blogs .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+
+    cursor: pointer;
+}
+
+.blogs .dot.active{
+    background: var(--primary-color);
+
+    cursor: default;
 }
